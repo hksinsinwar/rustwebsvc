@@ -24,6 +24,8 @@ pub mod proto {
     include!(concat!(env!("OUT_DIR"), "/rustwebsvc.rs"));
 }
 
+pub mod reqwest_jni;
+
 const CONTENT_TYPE_PROTO: &str = "application/x-protobuf";
 const CONTENT_TYPE_JSON: &str = "application/json";
 
